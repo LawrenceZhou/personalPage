@@ -1,0 +1,26 @@
+<div ng-click="goBack()" class = "goBackButton"> <i class="fa fa-arrow-left" style=""></i> See More Projects</div>
+<div class = "projectContent">
+<div class = "projectTitle">GNODC</div>
+<div class = "projectSubtitle">Global Net Orchestra Drum Circle</div>
+
+<div class = "projectParagraph">
+Global Net Orchestra Drum Circle(GNODC) is designed by professor Roger Dannenberg and I, to connect many drum players performing live in a worldwide drum show over the Internet, especially for the students who will take Computer Music Course in Carnegie Mellon University in Spring 2016. In the design, there is one drum server and a number(over 50) of players (some of players are administrators). With the help of GNODC, players can play drums together, talk with each others, get instructions from the administrators, etc. The configuration that GNODC adopted is star arrangement. A player should first contact music.cs.cmu.edu to get the location data of the server, and then send to and hear from the server all kinds of messages. During the performance, players will only communicate with the server. The concert collaborated by US, Spain, and China took place on April 24th, 2016.
+</div>
+<div class="projectImageD" style = "width: 640px; height: 500px; background: url(Image/GNODCConfig.jpg); background-size: contain;">
+  <div style = "color: black; font-size: 14px; top: 0px; left: 490px;">GNODC System Design</div>
+</div>
+<div class = "projectSectitle">Main Issue -- Network Delay</div>
+<div class = "projectParagraph">Latency comes with communication. Musicians typically deal with delays of 50ms or more when they paly together in a room or a hall, as sound travels at the speed of 340m/s. However, the latencies over the network can be much greater than this. According to the result of the experiment I did in Carnegie Mellon University located in Pittsburgh, average roundtrip times from Pittsburgh include: 22ms (Carnegie Mellon University), 74ms (Pittsburgh), 128ms (Los Angeles), and 352ms (Shenyang, China). These delays are caused by the time light traveling through the cable, local routing and cable or DSL modem. This means the delay over the network is not tolerable for global music performance.
+ <br><br>
+ So we take an idea from the Global Net Orchestra. We delay everything by one-period, for instance, 8 seconds (this is determined by 16 beats at 120 beats per minute). This method makes drum players line up perfectly.
+</div>
+<div class = "projectSectitle">Showcase</div>
+<div class="projectImageD" style = "width: 640px; height: 420px; background: url(Image/GNODCInterface.jpg); background-size: contain;">
+  <div style = "color: white; font-size: 14px; top: 0px;">GNODC User Interface</div>
+</div>
+<div class = "projectParagraph">Concert Clip<br><br></div>
+<video width="640" height="100%" controls>
+    <source src="Video/GNODC.mp4" type="video/mp4">
+</video>
+</div>
+

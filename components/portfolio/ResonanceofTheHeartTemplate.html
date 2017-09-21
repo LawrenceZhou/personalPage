@@ -1,0 +1,40 @@
+<div ng-click="goBack()" class = "goBackButton"> <i class="fa fa-arrow-left" style=""></i> See More Projects</div>
+<div class = "projectContent">
+<div class = "projectTitle">Resonance of The Heart</div>
+<div class = "projectSubtitle">Embodied Sonic Meditation In Mixed Reality</div>
+<div class="projectImageD" style = "width: 640px; height: 480px; background: url(Image/RoTHOriginal.jpg); background-size: contain;">
+  <div>Cecilia is performing with ESM.</div>
+</div>
+
+<div class = "projectParagraph">Embodied Sonic Meditation is an ongoing project in gestural control Digital Music Instrument(DMI) design and sound education. Embodied Sonic Meditation artistically explores the fact that we understand the world and abstract concepts such as music, art, and mathematics through our physical body and senses. This project intends to improve the reliability and to work around the challenges of using a Leap Motion™ sensor as a gestural control and input device in DMI design. Machine learning algorithms are implemented to estimate hand motion data, which is not typically captured by the sensor. I presented the paper and performed the Embodied Sonic Meditation at NIME 2017(Copenhagen) and the Stage of CCRMA. In spring 2017, ESM is being introduced by Cecilia Wu, to undergraduate students at the College of Creative Studies at University of California, Santa Barbara, as a teaching tool and a DMI design case study during a course named “Embodied Sonic Meditation – A Creative Sound Education.”</div>
+<div class = "projectSectitle">Background</div>
+<div class = "projectSubsectitle">Why ESM?</div>
+<div class = "projectParagraph">ESM is inspired by Pauline Oliveros’s “Deep Listening” practice and the work of George Lakoff and his collaborators on embodied cognition. ESM encourages people to fully understand and appreciate abstract electric and electroacoustic sounds and how these sounds are formed and transformed(cognitive process), by providing them interactive audio systems that can tightly engage their bodily activities to simultaneously create, sculpt, and morph the sonic outcomes themselves, using their body motions(embodiment).</div>
+<div class = "projectSubsectitle">Why Leap Motion™?</div>
+<div class = "projectParagraph">There are many musicians have had been using hand gestures to control live electronic music performance. Instead of using sensors that are attached to a performer’s hands, ESM uses a non-attached optical sensor and touchless hand gestures to control a real-time system producing sounds and visuals, and processing voice. Because of its low price, light weight and portability, as well as a lower latency and higher frame rate compared to other sensors such as the Microsoft’s Kinect™, a Leap Motion™ infrared sensor is chosen as our non-attached tracking sensor to realize the gestural instrument for ESM project.</div>
+
+<div class = "projectSectitle">System Design</div>
+<div class = "projectParagraph">
+The performer gives the system two inputs: vocals via a microphone, and hand gestures and motions via a Leap Motion™ sensor. The OSC protocol enables communications between Chuck software for audio processing, and Python software for sensing and visual processing. Recognition of one of the 7 Mudras triggers the corresponding sound, while continuous hand motions control 2 sound filters and 4 effects for real-time vocal processing, as well as the visualization of a 4-dimensional Buddhabrot’s trajectory deformation. Finally, the resulting sounds and graphics are amplified and projected into the performance space. </div>
+<div class="projectImageD" style = "width: 640px; height: 350px; background: url(Image/RoTHSystem.png); background-size: contain;">
+  <div style = "color: black; font-size: 10px; top: 3px;">ESM System Design</div>
+</div>
+
+<div class = "projectSectitle">Challenge 1): the sensor is unable to detect overlapping hands </div>
+<div class = "projectSubsectitle">Solution</div>
+<div class = "projectParagraph">We implemented three different algorithms,SVM, NN, k-NN to predict hand gestures while the hands were overlapped and ended up choosing to use KNN as it gave an average test accuracy of 62%. KNN is ideal for the predictions as it can provide fast predictions needed for the real-time audio-visual generation.</div>
+<div class = "projectSectitle">Challenge 2): The sensor’s detection range is limited </div> 
+<div class = "projectSubsectitle">Solution</div>
+<div class = "projectParagraph">The lost trajectory data were predicted using a combination of k-means for clustering and KNN for classification. The algorithm only predicted the correct trajectory type 30% of the time, suggesting that there is room for improvement.</div>
+<div class = "projectSectitle">Showcase</div>
+<div class = "projectParagraph">Cecilia's performance<br><br></div>
+<video width="640" height="100%" controls>
+    <source src="Video/Buddhabrot.mp4" type="video/mp4">
+</video>
+
+<div class = "projectSectitle">Publications</div>
+<a class = "paperLink" href = "YIJUN_ZHOU_CV_2017.pdf">"Towards Robust Tracking with an Unreliable Motion Sensor Using Machine Learning", NIME2017</a>
+<br><br>
+<a class = "paperLink" href = "YIJUN_ZHOU_CV_2017.pdf">"Embodied Sonic Meditation: a multimedia framework for audio-visual contemplation", ICMC2017</a>
+</div>
+<div class = "projectBottom"><br><br><br><br></div>

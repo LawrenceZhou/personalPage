@@ -1,0 +1,143 @@
+div.cs142-login {
+    float: left;
+    max-width: 360px;
+    margin: 0;
+    padding: 1em;
+    color: white;
+}
+
+.cs142-loginButton {
+    max-width: 360px;
+    margin: 4px;
+    border-top: white 3px solid;
+    border-left: white 3px solid;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
+.cs142-loginButton:before {
+     padding:0;margin:0;display:block;/* not really needed */
+      content: "";
+      width:50%;
+      height:3px;
+      background-color:white;
+      position: absolute;
+      left:0;
+      bottom: 0;
+}
+
+.cs142-loginButton:hover:before {
+      width: 100%;
+      transition: width 500ms;
+}
+
+
+.cs142-loginButton:after {
+     padding:0;margin:0;display:block;/* not really needed */
+      content: "";
+      width:3px;
+      height:50%;
+      background-color:white;
+      position: absolute;
+      top:0;
+      right: 0;
+}
+
+.cs142-loginButton:hover:after {
+      height: 100%;
+      transition: height 500ms;
+}
+
+
+div.cs142-signup {
+    margin-left: 370px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+    color: white;
+}
+
+.cs142-registerButton {
+    max-width: 360px;
+    margin: 4px;
+    border-top: white 3px solid;
+    border-left: white 3px solid;
+    border-right: white 3px solid;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
+.cs142-registerButton:before {
+     padding:0;margin:0;display:block;/* not really needed */
+      content: "";
+      width:20%;
+      height:3px;
+      background-color:white;
+      position: absolute;
+      left:0;
+      bottom: 0;
+}
+
+.cs142-registerButton:hover:before {
+      width: 50%;
+      transition: width 500ms;
+}
+
+.cs142-registerButton:after {
+     padding:0;margin:0;display:block;/* not really needed */
+      content: "";
+      width:20%;
+      height:3px;
+      background-color:white;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+}
+
+.cs142-registerButton:hover:after {
+      width: 50%;
+      transition: width 500ms;
+}
+
+
+input{
+border-right: #ffffff 0px solid;
+border-top: #ffffff 0px solid;
+font-size: 9pt;
+border-left: #ffffff 0px solid;
+border-bottom: #c0c0c0 1px solid;
+background-color: transparent;
+}
+
+input:focus {
+    outline-width: 0;
+}
+
+md-input-container.md-login_register {
+    display: block;
+    color: white;
+}
+
+md-input-container.md-login_register:not(.md-input-invalid).md-input-focused .md-input {
+    color: white;
+}
+
+md-input-container.md-login_register:not(.md-input-invalid)not(.md-input-focused) .md-input {
+    color: white;
+}
+
+md-input-container.md-login_register:not(.md-input-invalid).md-input-focused label {
+    color: white;
+}
+
+md-input-container.md-login_register label{
+  color: white;
+}

@@ -1,0 +1,42 @@
+<div ng-click="goBack()" class = "goBackButton"> <i class="fa fa-arrow-left" style=""></i> See More Projects</div>
+<div class = "projectContent">
+<div class = "projectTitle">PiARno</div>
+<div class = "projectSubtitle">An Interactive Piano Educational Game In Mixed Reality</div>
+<div class = "projectImageContainer">
+<div class="projectImageD" style = "width: 360px; height: 210px; background: url(Image/PStart.jpg); background-size: cover;">
+  <div style = "top: 185px;">PiARno Start Scene</div>
+</div>
+<div class="projectImageD" style = "width: 360px; height: 240px; background: url(Image/PI.jpg); background-size: cover;">
+  <div>I'm playing with piARno.</div>
+</div>
+</div>
+
+<div class = "projectParagraph">PiARno is an interactive Augmented Reality(AR) application that teaches you piano lesson 101! You do not need any knowledge of piano, even music. It teaches you when and how to play the next keys to finish a song, and how you can play it better.
+<br><br>Through guided practice and feedback from piARno, one can quickly establish and reinforce melody awareness of a song and muscle memory of key touching techniques. It is anticipated that with audio metronome and visual color change, one learns playing a song faster than traditional piano learning methods(scores, video clips, etc.)</div>
+<div class = "projectSectitle">Motivation</div>
+<div class = "projectSubsectitle" style = "text-align: justify;">Piano is probably the most basic, but also popular musical instrument human beings have ever invented. However, most people like me could not become a piano musician for many reasons.</div>
+<div class = "projectParagraph"><ul><li>Learning piano can be very costly. Let alone the daunting tuition for a formal piano education, the musical instrument itself is already expensive.</li><li>It takes considerable gift to climb up piano’s steep learning curve. For example, understanding and memorizing the score scripts is pretty difficult.</li><li>Piano is bulky and immobile so practicing is limited to designated locations.</li><li>Ordinary people not planning to learn piano might also want to be able to play their favorite songs just for fun.</li></ul></div>
+
+<div class = "projectSectitle">System Design</div>
+<div class = "projectParagraph">
+<ul><li>A 25-Key MIDI keyboard controls a piano library in Garageband and sends MIDI message through UDP to the HoloLens.</li><li>Vuforia, a computer-vision plugin, is used to identify and localize the piano keyboard so that the monster is able to jump on the correct piano keys.</li></ul></div>
+<div class="projectImageD" style = "width: 640px; height: 230px; background: url(Image/PSystem.png); background-size: contain;">
+  <div style = "color: black; font-size: 14px; top: 0px; left: 490px;">PiARno System Design</div>
+</div>
+
+<div class = "projectSectitle">Gameplay</div>
+<div class = "projectParagraph"><ul><li>Follow instructions of the holographic monster on the piano keyboard and audio metronome to press keys at certain time. </li> 
+<li>A white monster stands on the next key one needs to play. It turns green if a key is played correctly, or purple if wrong.</li>
+<li>Performance is evaluated based on the number of errors and dynamic control during the song play.</li> </ul>
+</div>
+<div class = "projectSectitle">Showcase</div>
+<div class = "projectParagraph">Demo Video(Ooops!)<br><br></div>
+<video width="640" height="100%" controls>
+    <source src="Video/Hololens.mp4" type="video/mp4">
+</video>
+
+<div class = "projectSectitle">Code Download</div>
+<a class = "paperLink" href = "YIJUN_ZHOU_CV_2017.pdf">PiARno on Github</a>
+</div>
+
+<div class = "projectBottom"><br><br><br><br></div>

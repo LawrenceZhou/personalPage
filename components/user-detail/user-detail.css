@@ -1,0 +1,101 @@
+md-icon svg .cs142Project5-icon {
+	width: 18px;
+	height: 18px;
+	float: left;
+	display: inline;
+}
+
+div.cs142Project5-item {
+	font-size: 18px;
+	color: #2f36a9;
+}
+p.cs142Project5-subHeader {
+	font-size: 18px;
+	color: #8D7A7A;
+	display: inline;
+}
+
+span.md-headline {
+	font-size: 32px;
+	color: #2f36a9;
+}
+
+md-card.cs142Project5-userBlock {
+	width: 600px; 
+}
+
+.toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
+  color: white; }
+
+md-content.cs142Project5-userDetail {
+	background-color: white; 
+}
+
+p.description {
+	padding-left: 20px;
+	padding-right: 5px;
+}
+
+.gridListdemoBasicUsage md-grid-list {
+  margin: 8px; }
+
+.gridListdemoBasicUsage .cs142-preview {
+  overflow:hidden;
+}
+
+.gridListdemoBasicUsage md-grid-tile {
+  transition: all 400ms ease-out 50ms; 
+}
+
+.cs142Project5-viewButton {
+    max-width: 400px;
+    margin-left: 92px;
+    border-top: #221A99 3px solid;
+    border-bottom: #221A99 3px solid;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #221A99;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
+.cs142Project5-viewButton:hover {
+	color: white;
+	background-color: #221A99;
+	transition: color 250ms, background-color 250ms;
+	transition-delay: 250ms;
+}
+.cs142Project5-viewButton:before {
+    padding:0;margin:0;display:block;/* not really needed */
+    content: "";
+    width: 3px;
+    height: 0;
+    background-color: #221A99;
+    position: absolute;
+    left:0;
+    top: 0;
+}
+
+.cs142Project5-viewButton:hover:before {
+    height: 100%;
+    transition: width 250ms;
+}
+
+.cs142Project5-viewButton:after {
+    padding:0;margin:0;display:block;/* not really needed */
+    content: "";
+    width: 3px;
+    height: 0;
+    background-color: #221A99;
+    position: absolute;
+    right:0;
+    top: 0;
+}
+
+.cs142Project5-viewButton:hover:after {
+    height: 100%;
+    transition: height 250ms;
+}
+
+

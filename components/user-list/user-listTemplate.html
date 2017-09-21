@@ -1,0 +1,6 @@
+<md-list>
+    <md-list-item ng-repeat="entrance in Entrances" ng-click="viewSelected($index)" ng-class="{selectedIndex: selectedIndex===$index}">
+      <p style = "color : #FFF;">{{entrance.name}}</p>
+      <md-divider></md-divider>
+    </md-list-item>
+</md-list>

@@ -1,0 +1,44 @@
+div.about {
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-direction: row; /* Safari 6.1+ */
+    flex-direction: row;   
+}
+
+div.aboutImage {
+    padding: 20px;
+}
+
+img.aboutImage {
+    width: 300px;
+    height: 300px;
+}
+
+div.aboutParagraph {
+    padding-left: 20px;
+    width: 500px;
+}
+
+p.aboutParagraph {
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+a.link:link {
+    color: #9E9E9E;
+    text-decoration: none;
+}
+
+/* visited link */
+a.link:visited {
+    color: #9E9E9E;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a.link:hover {
+    color: #E0E0E0;
+    text-decoration: none;
+}

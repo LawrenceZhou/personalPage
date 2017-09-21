@@ -1,0 +1,58 @@
+<!doctype html>
+<html ng-app="cs142App" ng-controller="MainController">
+    <head>
+
+        <title>Daydream of YZ</title>
+
+        <link href="./node_modules/angular-material/angular-material.css" rel="stylesheet" />
+    
+        <script src="./node_modules/angular/angular.js" type="text/javascript" ></script>
+        <script src="./node_modules/angular-animate/angular-animate.js" type="text/javascript" ></script>
+        <script src="./node_modules/angular-aria/angular-aria.js" type="text/javascript" ></script>
+        <script src="./node_modules/angular-material/angular-material.js" type="text/javascript" ></script>
+
+        <script src="node_modules/angular-route/angular-route.js"></script>
+
+        <script src="node_modules/angular-resource/angular-resource.js"></script>
+
+        <script src="mainController.js"></script>
+        <link rel="stylesheet" type="text/css" href="main.css" />
+
+        <script src="components/user-list/user-listController.js"></script>
+        <link rel="stylesheet" type="text/css" href="components/user-list/user-list.css" />
+
+        <script src="components/about/aboutController.js"></script>
+        <link rel="stylesheet" type="text/css" href="components/about/about.css" />
+
+        <script src="components/user-detail/user-detailController.js"></script>
+        <link rel="stylesheet" type="text/css" href="components/user-detail/user-detail.css" />
+
+
+        <script src="components/portfolio/portfolioController.js"></script>
+        <link rel="stylesheet" type="text/css" href="components/portfolio/portfolio.css" />
+
+        <script src="components/bio/bioController.js"></script>
+        <link rel="stylesheet" type="text/css" href="components/bio/bio.css" />
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+        <md-toolbar md-scroll-shrink id = "md-Header">
+    		<div class="headerName">Yijun(Lawrence) Zhou</div>
+  		</md-toolbar>
+    <body layout="column">
+        <div class="container" flex layout="row">
+
+            <md-sidenav md-is-locked-open="true" class="md-whiteframe-z2">
+                <div ng-include="'components/user-list/user-listTemplate.html'" style = "background-color: transparent;" ng-controller="UserListController"></div>
+            </md-sidenav>
+
+            <md-content flex id="content">
+                <div data-ng-view  data-autoscroll="true"></div>
+            </md-content>
+
+        </div>
+
+    </body>
+</html>
